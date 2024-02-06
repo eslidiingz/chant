@@ -18,6 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  /* background-color: #1d232c; */
   background: linear-gradient(
       to bottom,
       transparent,
@@ -31,3 +32,23 @@ body {
     text-wrap: balance;
   }
 }
+
+.chant-container {
+  @apply container mx-auto px-2 md:px-4;
+}
+
+.chant-title {
+  @apply text-2xl md:text-6xl text-center mb-8 underline decoration-4 underline-offset-8 font-semibold;
+}
+
+.chant {
+  @apply text-xl md:text-5xl leading-normal text-center;
+}
+
+.btn-primary {
+  @apply border-blue-500 border-2 bg-blue-500/30 hover:bg-blue-500/70 text-blue-500 dark:text-white rounded-full px-8 py-2 shadow-lg hover:shadow-blue-500/70 duration-500;
+}
+
+/* @media screen and (min-width: 768px) {
+  
+} */
