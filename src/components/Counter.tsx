@@ -3,13 +3,7 @@ import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 import Button from './Form/Button'
 
-interface CounterProps {
-  align?: 'left' | 'center' | 'right'
-}
-
-const Counter = (props: CounterProps) => {
-  const counterClasses = `text-${props.align}`
-
+const Counter = () => {
   const [counter, setCounter] = useState<number>(0)
 
   const increaseCounter = () => {
@@ -28,14 +22,14 @@ const Counter = (props: CounterProps) => {
   }
   
   return (
-    <div className={`${counterClasses}`}>
+    <React.Fragment>
       <hr className='mb-8' />
       <div className='mb-8 text-2xl'>สวดเสร็จแล้ว {counter} รอบ</div>
       <Button 
         className='text-2xl'
         onClick={increaseCounter}
       >กดเพื่อนับรอบเพิ่ม</Button>
-    </div>
+    </React.Fragment>
   )
 }
 

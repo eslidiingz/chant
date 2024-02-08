@@ -7,7 +7,9 @@ const MaHaJakKaPhatPage = () => {
     <React.Fragment>
       <div className="chant-container">
         <MaHaJakKaPhat />
-        <Counter align='center' />
+        <div className="text-center">
+          <Counter />
+        </div>
       </div>
     </React.Fragment>
   )
